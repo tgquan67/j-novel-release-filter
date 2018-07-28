@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>
+        J-Novel Club updates, but filtered to your favorite
+    </title>
+</head>
+
+<body>
+    <h1>Update for {{ this_month }}</h1>
+    <input type="button" value="Previous month" onclick="location.search='?month={{ last_month }}'">
+    <input type="button" value="Next month" onclick="location.search='?month={{ next_month }}'">
+    <br><br>
+    {% for update in data %}
+    <div class="update-content">
+        {{ update.name }}<br>
+        {{ update.details }}<br>
+        {% if update.released %}
+        Released at <a href="{{ update.linkFragment }}">{{ update.linkFragment }}</a>    
+        {% else %}
+        Will be released on {{ update.date }}
+        {% endif %}
+        <br>--------------------------------<br>
+    </div>
+    {% endfor %}
+    <br>
+    Want to save your list? Bookmark this link:
+    <input type="text" value="{{ bookmark_url }}" size="50">
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>
+        Set the series you want to follow
+    </title>
+</head>
+
+<body>
+    <script type="application/javascript">
+        function submit() {
+            series = ""
+            Array.from(document.getElementsByClassName("titleCheckbox")).forEach(ch => {
+                if (ch.checked) {
+                    series += ch.value + ' ';
+                }
+            });
+            location.search = '?series=' + series;
+        }
+    </script> 
+    {% for series in series_list %}
+    <input type="checkbox" class="titleCheckbox" value="{{ series.value }}" {{series.checked}}>{{series.title}}
+    <br> 
+    {% endfor %}
+    <input type="button" value="Submit" onclick="submit()">
+</body>
+
+</html>
