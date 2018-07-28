@@ -92,7 +92,7 @@ def index(request):
         BASIC_QUERY["where"]["and"][0]["date"]["lt"] = t.strftime("%Y-%m-%d")
         BASIC_QUERY["where"]["and"][1]["date"]["gte"] = f.strftime("%Y-%m-%d")
         query = URL + json.dumps(BASIC_QUERY)
-        data = json.loads(requests.get(query).content)
+        data = requests.get(query).json()
         cache.set(mstr, data)
     if request.COOKIES.get('series'):
         following_list = [TITLES_LIST[i]["shortTitle"] for i in request.COOKIES.get('series').split()]
@@ -100,7 +100,7 @@ def index(request):
         following_list = [i["shortTitle"] for i in TITLES_LIST.values()]
     data = [i for i in data for j in following_list if j in i["name"]]
     for i in data:
-        i.pop("attachments")
+        i.pop("attachments", None)
         i["linkFragment"] = "https://j-novel.club" + i["linkFragment"]
         i["released"] = datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") < datetime.utcnow()
     next_month = (m+relativedelta(months=+1)).strftime("%Y-%m")
