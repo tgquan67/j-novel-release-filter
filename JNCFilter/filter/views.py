@@ -47,7 +47,8 @@ TITLES_LIST = {
     '36': {'title': 'JK Haru is a Sex Worker in Another World', 'shortTitle': 'JK Haru'},
     '37': {'title': 'Der Werwolf: The Annals of Veight', 'shortTitle': 'Jinrou'},
     '38': {'title': 'Sorcerous Stabber Orphen: The Wayward Journey', 'shortTitle': 'Orphen'},
-    '39': {'title': 'Last and First Idol', 'shortTitle': 'Last and First Idol'}
+    '39': {'title': 'Last and First Idol', 'shortTitle': 'Last and First Idol'},
+    '40': {'title': 'ECHO', 'shortTitle': 'ECHO'},
 }
 
 
