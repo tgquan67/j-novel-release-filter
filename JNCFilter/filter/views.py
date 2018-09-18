@@ -8,7 +8,7 @@ import json
 import requests
 
 TITLES_LIST = {
-    '0': {'title': 'Occultic;Nine', 'shortTitle': ''},
+    '0': {'title': 'Occultic;Nine', 'shortTitle': 'Occultic;Nine'},
     '1': {'title': 'My Little Sister Can Read Kanji', 'shortTitle': 'My Little Sister Can Read Kanji'},
     '2': {'title': 'Brave Chronicle: The Ruinmaker', 'shortTitle': 'Brave Chronicle'},
     '3': {'title': 'My Big Sister Lives in a Fantasy World', 'shortTitle': 'My Big Sister Lives in a Fantasy World'},
