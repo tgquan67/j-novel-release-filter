@@ -49,6 +49,8 @@ TITLES_LIST = {
     '38': {'title': 'Sorcerous Stabber Orphen: The Wayward Journey', 'shortTitle': 'Orphen'},
     '39': {'title': 'Last and First Idol', 'shortTitle': 'Last and First Idol'},
     '40': {'title': 'ECHO', 'shortTitle': 'ECHO'},
+    '41': {'title': 'My Next Life as a Villainess: All Routes Lead to Doom!', 'shortTitle': 'Bakarina'},
+    '42': {'title': 'Apparently it\'s My Fault That My Husband Has The Head of a Beast', 'shortTitle': 'Beast Head'},
 }
 
 
