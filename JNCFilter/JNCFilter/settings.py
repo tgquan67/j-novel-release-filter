@@ -125,6 +125,6 @@ STATIC_URL = '/static/'
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
-        'TIMEOUT': 10800,
+        'TIMEOUT': 3600,
     }
 }
