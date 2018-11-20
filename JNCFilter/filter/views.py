@@ -51,6 +51,11 @@ TITLES_LIST = {
     '40': {'title': 'ECHO', 'shortTitle': 'ECHO'},
     '41': {'title': 'My Next Life as a Villainess: All Routes Lead to Doom!', 'shortTitle': 'Bakarina'},
     '42': {'title': 'Apparently it\'s My Fault That My Husband Has The Head of a Beast', 'shortTitle': 'Beast Head'},
+    '43': {'title': 'Ascendance of a Bookworm (Manga)', 'shortTitle': 'Ascendance of a Bookworm (Manga)'},
+    '44': {'title': 'Seirei Gensouki: Spirit Chronicles (Manga)', 'shortTitle': 'Seirei Gensouki (Manga)'},
+    '45': {'title': 'A Very Fairy Apartment', 'shortTitle': 'A Very Fairy Apartment'},
+    '46': {'title': 'Infinite Dendrogram (Manga)', 'shortTitle': 'Infinite Dendrogram (Manga)'},
+    '47': {'title': 'How a Realist Hero Rebuilt the Kingdom (Manga)', 'shortTitle': 'Realist Hero (Manga)'},
 }
 
 
@@ -98,10 +103,13 @@ def index(request):
         data = requests.get(query).json()
         cache.set(mstr, data)
     if request.COOKIES.get('series'):
-        following_list = [TITLES_LIST[i]["shortTitle"] for i in request.COOKIES.get('series').split()]
+        fl = request.COOKIES.get('series').split()
+        following_list = [TITLES_LIST[i]["shortTitle"] for i in fl]
+        not_following_list = [TITLES_LIST[i]["shortTitle"] for i in TITLES_LIST.keys() if i not in fl]
     else:
         following_list = [i["shortTitle"] for i in TITLES_LIST.values()]
-    data = [i for i in data for j in following_list if j in i["name"]]
+        not_following_list = []
+    data = [i for i in data if any(j in i["name"] for j in following_list) and not any(j in i["name"] for j in not_following_list)]
     for i in data:
         i.pop("attachments", None)
         i["linkFragment"] = "https://j-novel.club" + i["linkFragment"]
