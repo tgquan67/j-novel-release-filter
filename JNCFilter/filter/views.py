@@ -72,6 +72,15 @@ def set_pref(request):
     return response
 
 
+def cleanup_title(title):
+    if title[-1] in "1234567890":
+        return title.rsplit(" V", 1)[0].strip()
+    elif ":" in title:
+        return title.rsplit(":", 1)[0].strip()
+    else:
+        return title.strip()
+
+
 def index(request):
     URL = "https://api.j-novel.club/api/events?filter="
     BASIC_QUERY = {
@@ -103,13 +112,10 @@ def index(request):
         data = requests.get(query).json()
         cache.set(mstr, data)
     if request.COOKIES.get('series'):
-        fl = request.COOKIES.get('series').split()
-        following_list = [TITLES_LIST[i]["shortTitle"] for i in fl]
-        not_following_list = [TITLES_LIST[i]["shortTitle"] for i in TITLES_LIST.keys() if i not in fl]
+        following_list = [TITLES_LIST[i]["shortTitle"] for i in request.COOKIES.get('series').split()]
     else:
         following_list = [i["shortTitle"] for i in TITLES_LIST.values()]
-        not_following_list = []
-    data = [i for i in data if any(j in i["name"] for j in following_list) and not any(j in i["name"] for j in not_following_list)]
+    data = [i for i in data if cleanup_title(i["name"]) in following_list]
     for i in data:
         i.pop("attachments", None)
         i["linkFragment"] = "https://j-novel.club" + i["linkFragment"]
