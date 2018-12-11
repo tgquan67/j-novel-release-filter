@@ -119,7 +119,12 @@ def index(request):
     for i in data:
         i.pop("attachments", None)
         i["linkFragment"] = "https://j-novel.club" + i["linkFragment"]
-        i["released"] = datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") < datetime.utcnow()
+        if datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") < datetime.utcnow():
+            i["released"] = True
+        else:
+            i["released"] = False
+            time_remaining = datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") - datetime.utcnow()
+            i["date"] += ' (in {})'.format(str(time_remaining))
     next_month = (m+relativedelta(months=+1)).strftime("%Y-%m")
     last_month = (m+relativedelta(months=-1)).strftime("%Y-%m")
     this_month = m.strftime("%Y-%m")
