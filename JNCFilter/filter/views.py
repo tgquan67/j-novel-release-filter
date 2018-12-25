@@ -56,6 +56,8 @@ TITLES_LIST = {
     '45': {'title': 'A Very Fairy Apartment', 'shortTitle': 'A Very Fairy Apartment'},
     '46': {'title': 'Infinite Dendrogram (Manga)', 'shortTitle': 'Infinite Dendrogram (Manga)'},
     '47': {'title': 'How a Realist Hero Rebuilt the Kingdom (Manga)', 'shortTitle': 'Realist Hero (Manga)'},
+    '48': {'title': 'I Shall Survive Using Potions!', 'shortTitle': 'Potion Loli'},
+    '49': {'title': 'Cooking with Wild Game', 'shortTitle': 'Cooking with Wild Game'},
 }
 
 
