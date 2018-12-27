@@ -64,7 +64,10 @@ TITLES_LIST = {
 def set_pref(request):
     if request.GET.get('series'):
         # Set new cookie then redirect
-        response = HttpResponseRedirect('/')
+        if request.GET.get('json'):
+            response = HttpResponseRedirect('/?json=1')
+        else:
+            response = HttpResponseRedirect('/')
         response.set_cookie('series', value=request.GET.get('series'), max_age=31536000)
     else:
         # Show default page to choose
@@ -131,4 +134,7 @@ def index(request):
     last_month = (m+relativedelta(months=-1)).strftime("%Y-%m")
     this_month = m.strftime("%Y-%m")
     bookmark_url = request.META["HTTP_HOST"]+"/set/?series="+request.COOKIES.get('series', '')
-    return render(request, 'home.html', {'data': data, 'next_month': next_month, 'this_month': this_month, 'last_month': last_month, 'bookmark_url': bookmark_url})
+    if request.GET.get('json'):
+        return HttpResponse(json.dumps(data), content_type="application/json")
+    else:
+        return render(request, 'home.html', {'data': data, 'next_month': next_month, 'this_month': this_month, 'last_month': last_month, 'bookmark_url': bookmark_url})
