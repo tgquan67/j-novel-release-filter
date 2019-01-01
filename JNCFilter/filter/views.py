@@ -61,6 +61,7 @@ TITLES_LIST = {
     '50': {'title': 'I Shall Survive Using Potions! (Manga)', 'shortTitle': 'I Shall Survive Using Potions!', 'seriesType': 'Manga'},
     '51': {'title': 'The Magic in this Other World is Too Far Behind! (Manga)', 'shortTitle': 'The Magic in this World is Too Far Behind!', 'seriesType': 'Manga'},
     '52': {'title': 'An Archdemon\'s Dilemma: How to Love Your Elf Bride (Manga)', 'shortTitle': 'Elf Bride Manga', 'seriesType': 'Manga'},
+    '53': {'title': 'Animeta!', 'shortTitle': 'Animeta!', 'seriesType': 'Manga'},
 }
 
 
