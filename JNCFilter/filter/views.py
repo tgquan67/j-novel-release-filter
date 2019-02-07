@@ -63,6 +63,7 @@ TITLES_LIST = {
     '52': {'title': 'An Archdemon\'s Dilemma: How to Love Your Elf Bride (Manga)', 'shortTitle': 'Elf Bride Manga', 'seriesType': 'Manga'},
     '53': {'title': 'Animeta!', 'shortTitle': 'Animeta!', 'seriesType': 'Manga'},
     '54': {'title': 'Welcome to Japan, Ms. Elf!', 'shortTitle': 'Welcome to Japan, Ms. Elf!', 'seriesType': 'Novel'},
+    '55': {'title': 'The Master of Ragnarok & Blesser of Einherjar (Manga)', 'shortTitle': 'The Master of Ragnarok (Manga)', 'seriesType': 'Manga'},
 }
 
 
