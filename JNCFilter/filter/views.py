@@ -64,6 +64,7 @@ TITLES_LIST = {
     '53': {'title': 'Animeta!', 'shortTitle': ['Animeta!', ], 'seriesType': 'Manga'},
     '54': {'title': 'Welcome to Japan, Ms. Elf!', 'shortTitle': ['Welcome to Japan, Ms. Elf!', ], 'seriesType': 'Novel'},
     '55': {'title': 'The Master of Ragnarok & Blesser of Einherjar (Manga)', 'shortTitle': ['The Master of Ragnarok (Manga)', ], 'seriesType': 'Manga'},
+    '56': {'title': "The Greatest Magicmaster's Retirement Plan", 'shortTitle': ['Magicmaster', ], 'seriesType': 'Novel'},
 }
 
 
@@ -123,7 +124,7 @@ def index(request):
         data = requests.get(query).json()
         cache.set(mstr, data)
     if request.COOKIES.get('series'):
-        following_list = [j for i in request.COOKIES.get('series').split() for j in TITLES_LIST[i]["shortTitle"] ]
+        following_list = [j for i in request.COOKIES.get('series').split() for j in TITLES_LIST[i]["shortTitle"]]
     else:
         following_list = [j for i in TITLES_LIST.values() for j in i["shortTitle"]]
     data = [i for i in data if cleanup_title(i["name"]) in following_list]
