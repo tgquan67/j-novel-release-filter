@@ -68,6 +68,10 @@ TITLES_LIST = {
     '57': {'title': "Campfire Cooking in Another World with My Absurd Skill", 'shortTitle': ['Campfire Cooking', ], 'seriesType': 'Novel'},
     '58': {'title': "Ascendance of a Bookworm", 'shortTitle': ['Bookworm (LN)', ], 'seriesType': 'Novel'},
     '59': {'title': "Full Metal Panic!", 'shortTitle': ['Full Metal Panic!', ], 'seriesType': 'Novel'},
+    '60': {'title': 'Discommunication', 'shortTitle': ['Discommunication', ], 'seriesType': 'Manga'},
+    '61': {'title': 'Sweet Reincarnation', 'shortTitle': ['Sweet Reincarnation', ], 'seriesType': 'Manga'},
+    '62': {'title': 'Marginal Operation', 'shortTitle': ['Marginal Operation', ], 'seriesType': 'Manga'},
+    '63': {'title': 'The Faraway Paladin (Manga)', 'shortTitle': ['The Faraway Paladin (Manga)', ], 'seriesType': 'Manga'},
 }
 
 
