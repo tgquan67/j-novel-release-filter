@@ -72,6 +72,9 @@ TITLES_LIST = {
     '61': {'title': 'Sweet Reincarnation', 'shortTitle': ['Sweet Reincarnation', ], 'seriesType': 'Manga'},
     '62': {'title': 'Marginal Operation', 'shortTitle': ['Marginal Operation', ], 'seriesType': 'Manga'},
     '63': {'title': 'The Faraway Paladin (Manga)', 'shortTitle': ['The Faraway Paladin (Manga)', ], 'seriesType': 'Manga'},
+    '64': {'title': "Crest of the Stars", 'shortTitle': ['Crest of the Stars', ], 'seriesType': 'Novel'},
+    '65': {'title': "Record of Wortenia War", 'shortTitle': ['Wortenia', ], 'seriesType': 'Novel'},
+    '66': {'title': "Side-By-Side Dreamers", 'shortTitle': ['Side-By-Side Dreamers', ], 'seriesType': 'Novel'},
 }
 
 
