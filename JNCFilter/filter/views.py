@@ -75,6 +75,7 @@ TITLES_LIST = {
     '64': {'title': "Crest of the Stars", 'shortTitle': ['Crest of the Stars', ], 'seriesType': 'Novel'},
     '65': {'title': "Record of Wortenia War", 'shortTitle': ['Wortenia', ], 'seriesType': 'Novel'},
     '66': {'title': "Side-By-Side Dreamers", 'shortTitle': ['Side-By-Side Dreamers', ], 'seriesType': 'Novel'},
+    '67': {'title': "Seriously Seeking Sister! Ultimate Vampire Princess Just Wants Little Sister; Plenty of Service Will Be Provided!", 'shortTitle': ['Yuri Vampire', ], 'seriesType': 'Novel'},
 }
 
 
