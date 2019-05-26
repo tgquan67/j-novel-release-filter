@@ -89,9 +89,10 @@ def set_pref(request):
         response.set_cookie('series', value=request.GET.get('series'), max_age=31536000)
     else:
         # Show default page to choose
+        bookmark_url = request.META["HTTP_HOST"]+"/series/"
         following_list = request.COOKIES.get('series', '').split()
-        render_list = [{'value': key, 'title': value['title'], 'checked':"checked" if key in following_list else ""} for key, value in TITLES_LIST.items()]
-        response = render(request, 'set.html', {'series_list': render_list})
+        render_list = [{'value': str(key), 'title': TITLES_LIST[str(key)]['title'], 'checked':"checked" if str(key) in following_list else ""} for key in range(len(TITLES_LIST))]
+        response = render(request, 'set.html', {'series_list': render_list, 'bookmark_url': bookmark_url})
     return response
 
 
@@ -152,6 +153,60 @@ def index(request):
     last_month = (m+relativedelta(months=-1)).strftime("%Y-%m")
     this_month = m.strftime("%Y-%m")
     bookmark_url = request.META["HTTP_HOST"]+"/set/?series="+request.COOKIES.get('series', '')
+    if request.GET.get('json'):
+        return HttpResponse(json.dumps(data), content_type="application/json")
+    else:
+        return render(request, 'home.html', {'data': data, 'next_month': next_month, 'this_month': this_month, 'last_month': last_month, 'bookmark_url': bookmark_url})
+
+
+def get_series(request, series):
+    URL = "https://api.j-novel.club/api/events?filter="
+    BASIC_QUERY = {
+        "where": {
+            "and": [
+                {
+                    "date": {"lt": "2018-08-01"}
+                },
+                {
+                    "date": {"gte": "2018-07-01"}
+                }
+            ]
+        }
+    }
+    if request.GET.get('month'):
+        m = datetime.strptime(request.GET.get('month'), "%Y-%m")
+        mstr = request.GET.get('month')
+    else:
+        m = datetime.today()
+        mstr = m.strftime("%Y-%m")
+    if cache.get(mstr):
+        data = cache.get(mstr)
+    else:
+        f = m + relativedelta(day=1)
+        t = f + relativedelta(months=+1)
+        BASIC_QUERY["where"]["and"][0]["date"]["lt"] = t.strftime("%Y-%m-%d")
+        BASIC_QUERY["where"]["and"][1]["date"]["gte"] = f.strftime("%Y-%m-%d")
+        query = URL + json.dumps(BASIC_QUERY)
+        data = requests.get(query).json()
+        cache.set(mstr, data)
+    try:
+        following_list = TITLES_LIST[series]["shortTitle"]
+    except KeyError:
+        return HttpResponse("Invalid series")
+    data = [i for i in data if cleanup_title(i["name"]) in following_list]
+    for i in data:
+        i.pop("attachments", None)
+        i["linkFragment"] = "https://j-novel.club" + i["linkFragment"]
+        if datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") < datetime.utcnow():
+            i["released"] = True
+        else:
+            i["released"] = False
+            time_remaining = datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") - datetime.utcnow()
+            i["date"] += ' (in {})'.format(str(time_remaining))
+    next_month = (m+relativedelta(months=+1)).strftime("%Y-%m")
+    last_month = (m+relativedelta(months=-1)).strftime("%Y-%m")
+    this_month = m.strftime("%Y-%m")
+    bookmark_url = request.META["HTTP_HOST"]+"/series/"+str(series)
     if request.GET.get('json'):
         return HttpResponse(json.dumps(data), content_type="application/json")
     else:

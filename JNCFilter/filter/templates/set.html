@@ -17,10 +17,11 @@
             });
             location.search = '?series=' + series;
         }
-    </script> 
+    </script>
     {% for series in series_list %}
-    <input type="checkbox" class="titleCheckbox" value="{{ series.value }}" {{series.checked}}>{{series.title}}
-    <br> 
+    <input type="checkbox" class="titleCheckbox" value="{{ series.value }}" {{series.checked}}>
+    <a href="http://{{ bookmark_url }}{{ series.value }}">{{series.title}}</a>
+    <br>
     {% endfor %}
     <input type="button" value="Submit" onclick="submit()">
 </body>
