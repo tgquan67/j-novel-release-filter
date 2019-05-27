@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version='2.0'>
+    <channel>
+        <title>J-Novel Club updates, but filtered to your favorite</title> 
+        <link>{{ rss_url }}</link>
+        <description>{{ description }}</description>
+        <lastBuildDate>{{ lastBuildDate }}</lastBuildDate>
+        {% for update in data %}
+        <item>
+            <title>{{ update.name }} {{ update.details }}</title>
+            <link>{{ update.linkFragment }}</link>
+            <description>{{ update.name }} {{ update.details }}</description>
+            <pubDate>{{ update.date }}</pubDate>
+            <guid>{{ update.id }}</guid>
+        </item>
+        {% endfor %}
+    </channel>
+</rss>

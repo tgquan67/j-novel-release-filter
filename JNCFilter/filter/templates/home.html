@@ -16,7 +16,7 @@
         {{ update.name }}<br>
         {{ update.details }}<br>
         {% if update.released %}
-        Released at <a href="{{ update.linkFragment }}">{{ update.linkFragment }}</a>    
+        Released at <a href="{{ update.linkFragment }}">{{ update.linkFragment }}</a>
         {% else %}
         Will be released on {{ update.date }}
         {% endif %}
@@ -24,9 +24,13 @@
     </div>
     {% endfor %}
     <br>
-    Want to save your list? Bookmark this link:
-    <input type="text" value="{{ bookmark_url }}" size="50"><br>
-    Or visit <a href="/set/">this link</a> to modify it.
+    Want to save this list as default? Use <a href="{{ setcookie_url }}">this</a> link:
+    <br>
+    Or visit <a href="/set/">this link</a> to modify your default list.
+    <br>
+    Share this list: <a href="{{ quickview_url }}">{{ quickview_url }}</a>
+    <br>
+    Follow this list via <a href="{{ rss_url }}">RSS</a>.
 </body>
 
 </html>

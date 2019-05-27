@@ -7,4 +7,5 @@ urlpatterns = [
     path('', index, name='index'),
     path('set/', set_pref, name='set_pref'),
     path('series/<str:series>', get_series, name='get_series'),
+    path('rss/<str:series>', get_rss, name='get_rss'),
 ]

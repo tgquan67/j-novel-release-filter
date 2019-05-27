@@ -84,6 +84,8 @@ def set_pref(request):
         # Set new cookie then redirect
         if request.GET.get('json'):
             response = HttpResponseRedirect('/?json=1')
+        elif request.GET.get('rss'):
+            response = HttpResponseRedirect('/?rss=1')
         else:
             response = HttpResponseRedirect('/')
         response.set_cookie('series', value=request.GET.get('series'), max_age=31536000)
@@ -105,7 +107,14 @@ def cleanup_title(title):
         return title.strip()
 
 
-def index(request):
+def filter_to_month_and_series(series, month=None):
+    if series:
+        try:
+            following_list = [j for i in series.split() for j in TITLES_LIST[i]["shortTitle"]]
+        except KeyError:
+            return HttpResponse("Invalid series")
+    else:
+        following_list = [j for i in TITLES_LIST.values() for j in i["shortTitle"]]
     URL = "https://api.j-novel.club/api/events?filter="
     BASIC_QUERY = {
         "where": {
@@ -119,9 +128,9 @@ def index(request):
             ]
         }
     }
-    if request.GET.get('month'):
-        m = datetime.strptime(request.GET.get('month'), "%Y-%m")
-        mstr = request.GET.get('month')
+    if month:
+        m = datetime.strptime(month, "%Y-%m")
+        mstr = month
     else:
         m = datetime.today()
         mstr = m.strftime("%Y-%m")
@@ -135,10 +144,6 @@ def index(request):
         query = URL + json.dumps(BASIC_QUERY)
         data = requests.get(query).json()
         cache.set(mstr, data)
-    if request.COOKIES.get('series'):
-        following_list = [j for i in request.COOKIES.get('series').split() for j in TITLES_LIST[i]["shortTitle"]]
-    else:
-        following_list = [j for i in TITLES_LIST.values() for j in i["shortTitle"]]
     data = [i for i in data if cleanup_title(i["name"]) in following_list]
     for i in data:
         i.pop("attachments", None)
@@ -152,62 +157,38 @@ def index(request):
     next_month = (m+relativedelta(months=+1)).strftime("%Y-%m")
     last_month = (m+relativedelta(months=-1)).strftime("%Y-%m")
     this_month = m.strftime("%Y-%m")
-    bookmark_url = request.META["HTTP_HOST"]+"/set/?series="+request.COOKIES.get('series', '')
+    return (data, next_month, this_month, last_month)
+
+
+def index(request):
+    data, next_month, this_month, last_month = filter_to_month_and_series(series=request.COOKIES.get('series'), month=request.GET.get('month'))
+    setcookie_url = "http://"+request.META["HTTP_HOST"]+"/set/?series="+request.COOKIES.get('series', '')
+    quickview_url = "http://"+request.META["HTTP_HOST"]+"/series/"+request.COOKIES.get('series', '')
+    rss_url = "http://"+request.META["HTTP_HOST"]+"/rss/"+request.COOKIES.get('series', '')
     if request.GET.get('json'):
         return HttpResponse(json.dumps(data), content_type="application/json")
     else:
-        return render(request, 'home.html', {'data': data, 'next_month': next_month, 'this_month': this_month, 'last_month': last_month, 'bookmark_url': bookmark_url})
+        return render(request, 'home.html', {'data': data, 'next_month': next_month, 'this_month': this_month, 'last_month': last_month, 'setcookie_url': setcookie_url, 'quickview_url': quickview_url, 'rss_url': rss_url})
 
 
 def get_series(request, series):
-    URL = "https://api.j-novel.club/api/events?filter="
-    BASIC_QUERY = {
-        "where": {
-            "and": [
-                {
-                    "date": {"lt": "2018-08-01"}
-                },
-                {
-                    "date": {"gte": "2018-07-01"}
-                }
-            ]
-        }
-    }
-    if request.GET.get('month'):
-        m = datetime.strptime(request.GET.get('month'), "%Y-%m")
-        mstr = request.GET.get('month')
-    else:
-        m = datetime.today()
-        mstr = m.strftime("%Y-%m")
-    if cache.get(mstr):
-        data = cache.get(mstr)
-    else:
-        f = m + relativedelta(day=1)
-        t = f + relativedelta(months=+1)
-        BASIC_QUERY["where"]["and"][0]["date"]["lt"] = t.strftime("%Y-%m-%d")
-        BASIC_QUERY["where"]["and"][1]["date"]["gte"] = f.strftime("%Y-%m-%d")
-        query = URL + json.dumps(BASIC_QUERY)
-        data = requests.get(query).json()
-        cache.set(mstr, data)
-    try:
-        following_list = TITLES_LIST[series]["shortTitle"]
-    except KeyError:
-        return HttpResponse("Invalid series")
-    data = [i for i in data if cleanup_title(i["name"]) in following_list]
-    for i in data:
-        i.pop("attachments", None)
-        i["linkFragment"] = "https://j-novel.club" + i["linkFragment"]
-        if datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") < datetime.utcnow():
-            i["released"] = True
-        else:
-            i["released"] = False
-            time_remaining = datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ") - datetime.utcnow()
-            i["date"] += ' (in {})'.format(str(time_remaining))
-    next_month = (m+relativedelta(months=+1)).strftime("%Y-%m")
-    last_month = (m+relativedelta(months=-1)).strftime("%Y-%m")
-    this_month = m.strftime("%Y-%m")
-    bookmark_url = request.META["HTTP_HOST"]+"/series/"+str(series)
+    data, next_month, this_month, last_month = filter_to_month_and_series(series=series, month=request.GET.get('month'))
+    setcookie_url = "http://"+request.META["HTTP_HOST"]+"/set/?series="+series
+    quickview_url = "http://"+request.META["HTTP_HOST"]+"/series/"+series
+    rss_url = "http://"+request.META["HTTP_HOST"]+"/rss/"+series
     if request.GET.get('json'):
         return HttpResponse(json.dumps(data), content_type="application/json")
     else:
-        return render(request, 'home.html', {'data': data, 'next_month': next_month, 'this_month': this_month, 'last_month': last_month, 'bookmark_url': bookmark_url})
+        return render(request, 'home.html', {'data': data, 'next_month': next_month, 'this_month': this_month, 'last_month': last_month, 'setcookie_url': setcookie_url, 'quickview_url': quickview_url, 'rss_url': rss_url})
+
+
+def get_rss(request, series):
+    data, next_month, this_month, last_month = filter_to_month_and_series(series=series, month=request.GET.get('month'))
+    rss_url = "http://"+request.META["HTTP_HOST"]+"/rss/"+series
+    data = [i for i in data if i["released"]]
+    for i in data:
+        i["date"] = datetime.strftime(datetime.strptime(i["date"], "%Y-%m-%dT%H:%M:%S.%fZ"), "%a, %d %b %Y %H:%M")
+    lastBuildDate = datetime.strftime(datetime.utcnow(), "%a, %d %b %Y %H:%M")
+    set_url = request.META["HTTP_HOST"] + "/set/"
+    description = "Data for series {}, visit {} to get series names".format(series, set_url)
+    return render(request, 'rss.xml', {'data': data, 'rss_url': rss_url, 'lastBuildDate': lastBuildDate, 'description': description})
