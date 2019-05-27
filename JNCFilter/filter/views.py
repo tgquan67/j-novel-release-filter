@@ -107,7 +107,7 @@ def cleanup_title(title):
         return title.strip()
 
 
-def filter_to_month_and_series(series, month=None):
+def filter_to_month_and_series(series, month=None, rss=False):
     if series:
         try:
             following_list = [j for i in series.split() for j in TITLES_LIST[i]["shortTitle"]]
@@ -134,11 +134,17 @@ def filter_to_month_and_series(series, month=None):
     else:
         m = datetime.today()
         mstr = m.strftime("%Y-%m")
+    if rss:
+        mstr += "_rss"
     if cache.get(mstr):
         data = cache.get(mstr)
     else:
-        f = m + relativedelta(day=1)
-        t = f + relativedelta(months=+1)
+        if rss:
+            f = m + relativedelta(day=1, months=-1)
+            t = f + relativedelta(months=+2)
+        else:
+            f = m + relativedelta(day=1)
+            t = f + relativedelta(months=+1)
         BASIC_QUERY["where"]["and"][0]["date"]["lt"] = t.strftime("%Y-%m-%d")
         BASIC_QUERY["where"]["and"][1]["date"]["gte"] = f.strftime("%Y-%m-%d")
         query = URL + json.dumps(BASIC_QUERY)
@@ -183,7 +189,7 @@ def get_series(request, series):
 
 
 def get_rss(request, series):
-    data, next_month, this_month, last_month = filter_to_month_and_series(series=series, month=request.GET.get('month'))
+    data, next_month, this_month, last_month = filter_to_month_and_series(series=series, month=request.GET.get('month'), rss=True)
     rss_url = "http://"+request.META["HTTP_HOST"]+"/rss/"+series
     data = [i for i in data if i["released"]]
     for i in data:
