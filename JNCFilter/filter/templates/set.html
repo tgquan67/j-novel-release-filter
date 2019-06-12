@@ -8,14 +8,25 @@
 
 <body>
     <script type="application/javascript">
-        function submit() {
+        function gatherAllSeries() {
             series = ""
             Array.from(document.getElementsByClassName("titleCheckbox")).forEach(ch => {
                 if (ch.checked) {
                     series += ch.value + ' ';
                 }
             });
-            location.search = '?series=' + series;
+            return series
+        }
+        function submit() {
+            location.search = '?series=' + gatherAllSeries();
+        }
+        function showLinks() {
+            linksDiv = document.getElementById("links")
+            allSeries = gatherAllSeries();
+            rssLink = location.origin + '/rss/' + allSeries
+            shareableLink = location.origin + '/series/' + allSeries
+            linksDiv.innerHTML = '<a href="' + shareableLink + '">Shareable link</a> and <a href="' + rssLink + '">RSS link</a>'
+            linksDiv.hidden = false
         }
     </script>
     {% for series in series_list %}
@@ -23,7 +34,10 @@
     <a href="http://{{ bookmark_url }}{{ series.value }}">{{series.title}}</a>
     <br>
     {% endfor %}
-    <input type="button" value="Submit" onclick="submit()">
+    <br>
+    <input type="button" value="Save" onclick="submit()">
+    <input type="button" value="Generate shareable and RSS links" onclick="showLinks()">
+    <span id="links" hidden></span>
 </body>
 
 </html>
