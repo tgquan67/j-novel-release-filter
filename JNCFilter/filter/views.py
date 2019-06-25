@@ -77,6 +77,7 @@ TITLES_LIST = {
     '66': {'title': "Side-By-Side Dreamers", 'shortTitle': ['Side-By-Side Dreamers', ], 'seriesType': 'Novel'},
     '67': {'title': "Seriously Seeking Sister! Ultimate Vampire Princess Just Wants Little Sister; Plenty of Service Will Be Provided!", 'shortTitle': ['Yuri Vampire', ], 'seriesType': 'Novel'},
     '68': {'title': "The Unwanted Undead Adventurer (Manga)", 'shortTitle': ['Unwanted Undead (Manga)', ], 'seriesType': 'Manga'},
+    '69': {'title': "Middle-Aged Businessman, Arise in Another World!", 'shortTitle': ['Middle-Aged Businessman, Arise in Another World!', ], 'seriesType': 'Novel'},
 }
 
 
