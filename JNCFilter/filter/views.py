@@ -31,7 +31,7 @@ TITLES_LIST = {
     '20': {'title': 'Walking My Second Path in Life', 'shortTitle': ['Watafuta', ]},
     '21': {'title': 'Yume Nikki: I Am Not in Your Dream', 'shortTitle': ['Yume Nikki', ]},
     '22': {'title': 'Ao Oni', 'shortTitle': ['Ao Oni', ]},
-    '23': {'title': 'Arifureta Zero', 'shortTitle': ['Arifureta Zero', ]},
+    '23': {'title': 'Arifureta Zero', 'shortTitle': ['Arifureta Zero', 'Arifureta Zero:', ]},
     '24': {'title': 'The Master of Ragnarok & Blesser of Einherjar', 'shortTitle': ['The Master of Ragnarok', ]},
     '25': {'title': "Me, a Genius? I Was Reborn into Another World and I Think They've Got the Wrong Idea!", 'shortTitle': ['Me, a Genius?', ]},
     '26': {'title': 'The Unwanted Undead Adventurer', 'shortTitle': ['Unwanted Undead', ]},
@@ -79,6 +79,7 @@ TITLES_LIST = {
     '68': {'title': "The Unwanted Undead Adventurer (Manga)", 'shortTitle': ['Unwanted Undead (Manga)', ], 'seriesType': 'Manga'},
     '69': {'title': "Middle-Aged Businessman, Arise in Another World!", 'shortTitle': ['Middle-Aged Businessman, Arise in Another World!', ], 'seriesType': 'Novel'},
     '70': {'title': "Otherside Picnic", 'shortTitle': ['Otherside Picnic', ], 'seriesType': 'Novel'},
+    '71': {'title': "The Combat Baker and Automaton Waitress", 'shortTitle': ['Combat Baker:', 'Combat Baker', ], 'seriesType': 'Novel'},
 }
 
 
