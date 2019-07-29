@@ -81,6 +81,7 @@ TITLES_LIST = {
     '70': {'title': "Otherside Picnic", 'shortTitle': ['Otherside Picnic', ], 'seriesType': 'Novel'},
     '71': {'title': "The Combat Baker and Automaton Waitress", 'shortTitle': ['Combat Baker:', 'Combat Baker', ], 'seriesType': 'Novel'},
     '72': {'title': "There Was No Secret Evil-Fighting Organization (srsly?!), So I Made One MYSELF!", 'shortTitle': ['Secret Organization', ], 'seriesType': 'Novel'},
+    '73': {'title': "Cooking WIth Wild Game (Manga)", 'shortTitle': ['Cooking WIth Wild Game (Manga)', ], 'seriesType': 'Manga'},
 }
 
 
