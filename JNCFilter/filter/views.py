@@ -77,7 +77,7 @@ TITLES_LIST = {
     '66': {'title': "Side-By-Side Dreamers", 'shortTitle': ['Side-By-Side Dreamers', ], 'seriesType': 'Novel'},
     '67': {'title': "Seriously Seeking Sister! Ultimate Vampire Princess Just Wants Little Sister; Plenty of Service Will Be Provided!", 'shortTitle': ['Yuri Vampire', ], 'seriesType': 'Novel'},
     '68': {'title': "The Unwanted Undead Adventurer (Manga)", 'shortTitle': ['Unwanted Undead (Manga)', ], 'seriesType': 'Manga'},
-    '69': {'title': "Middle-Aged Businessman, Arise in Another World!", 'shortTitle': ['Middle-Aged Businessman, Arise in Another World!', ], 'seriesType': 'Novel'},
+    '69': {'title': "Middle-Aged Businessman, Arise in Another World!", 'shortTitle': ['Middle-Aged Businessman, Arise in Another World!', 'Businessman Isekai', ], 'seriesType': 'Novel'},
     '70': {'title': "Otherside Picnic", 'shortTitle': ['Otherside Picnic', ], 'seriesType': 'Novel'},
     '71': {'title': "The Combat Baker and Automaton Waitress", 'shortTitle': ['Combat Baker:', 'Combat Baker', ], 'seriesType': 'Novel'},
     '72': {'title': "There Was No Secret Evil-Fighting Organization (srsly?!), So I Made One MYSELF!", 'shortTitle': ['Secret Organization', ], 'seriesType': 'Novel'},
