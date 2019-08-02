@@ -83,6 +83,7 @@ TITLES_LIST = {
     '72': {'title': "There Was No Secret Evil-Fighting Organization (srsly?!), So I Made One MYSELF!", 'shortTitle': ['Secret Organization', ], 'seriesType': 'Novel'},
     '73': {'title': "Cooking WIth Wild Game (Manga)", 'shortTitle': ['Cooking WIth Wild Game (Manga)', ], 'seriesType': 'Manga'},
     '74': {'title': "Sexiled: My Sexist Party Leader Kicked Me Out, So I Teamed Up With a Mythical Sorceress!", 'shortTitle': ['Sexiled', ], 'seriesType': 'Novel'},
+    '75': {'title': "Demon Lord, Retry!", 'shortTitle': ['Demon Lord, Retry!', ], 'seriesType': 'Novel'},
 }
 
 
