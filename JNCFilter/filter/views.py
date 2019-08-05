@@ -59,7 +59,7 @@ TITLES_LIST = {
     '48': {'title': 'I Shall Survive Using Potions!', 'shortTitle': ['Potion Loli', ], 'seriesType': 'Novel'},
     '49': {'title': 'Cooking with Wild Game', 'shortTitle': ['Cooking with Wild Game', ], 'seriesType': 'Novel'},
     '50': {'title': 'I Shall Survive Using Potions! (Manga)', 'shortTitle': ['I Shall Survive Using Potions!', 'Potion Loli (Manga)', ], 'seriesType': 'Manga'},
-    '51': {'title': 'The Magic in this Other World is Too Far Behind! (Manga)', 'shortTitle': ['The Magic in this World is Too Far Behind!', ], 'seriesType': 'Manga'},
+    '51': {'title': 'The Magic in this Other World is Too Far Behind! (Manga)', 'shortTitle': ['The Magic in this World is Too Far Behind!', 'The Magic in this Other World is Too Far Behind!'], 'seriesType': 'Manga'},
     '52': {'title': "An Archdemon's Dilemma: How to Love Your Elf Bride (Manga)", 'shortTitle': ['Elf Bride Manga', 'Elf Bride (Manga)', ], 'seriesType': 'Manga'},
     '53': {'title': 'Animeta!', 'shortTitle': ['Animeta!', ], 'seriesType': 'Manga'},
     '54': {'title': 'Welcome to Japan, Ms. Elf!', 'shortTitle': ['Welcome to Japan, Ms. Elf!', ], 'seriesType': 'Novel'},
