@@ -84,6 +84,7 @@ TITLES_LIST = {
     '73': {'title': "Cooking WIth Wild Game (Manga)", 'shortTitle': ['Cooking WIth Wild Game (Manga)', ], 'seriesType': 'Manga'},
     '74': {'title': "Sexiled: My Sexist Party Leader Kicked Me Out, So I Teamed Up With a Mythical Sorceress!", 'shortTitle': ['Sexiled', ], 'seriesType': 'Novel'},
     '75': {'title': "Demon Lord, Retry!", 'shortTitle': ['Demon Lord, Retry!', ], 'seriesType': 'Novel'},
+    '76': {'title': "Sorcerous Stabber Orphen: The Reckless Journey", 'shortTitle': ['Sorcerous Stabber Orphen: The Reckless Journey', ], 'seriesType': 'Manga'},
 }
 
 
