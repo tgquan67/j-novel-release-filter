@@ -14,7 +14,7 @@ TITLES_LIST = {
     '3': {'title': 'My Big Sister Lives in a Fantasy World', 'shortTitle': ['My Big Sister Lives in a Fantasy World', ]},
     '4': {'title': 'Grimgar of Fantasy and Ash', 'shortTitle': ['Grimgar', ], 'seriesType': 'Novel'},
     '5': {'title': 'I Saved Too Many Girls and Caused the Apocalypse', 'shortTitle': ['Little Apocalypse', ], 'seriesType': 'Novel'},
-    '6': {'title': 'Mixed Bathing in Another Dimension', 'shortTitle': ['Mixed Bathing in Another Dimension', ]},
+    '6': {'title': 'Mixed Bathing in Another Dimension', 'shortTitle': ['Mixed Bathing in Another Dimension', 'Mixed Bathing']},
     '7': {'title': 'The Faraway Paladin', 'shortTitle': ['The Faraway Paladin', ]},
     '8': {'title': 'Paying to Win in a VRMMO', 'shortTitle': ['Paying to Win in a VRMMO', ]},
     '9': {'title': 'How a Realist Hero Rebuilt the Kingdom', 'shortTitle': ['Realist Hero', 'How a Realist Hero Rebuilt the Kingdom', ]},
