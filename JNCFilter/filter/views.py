@@ -85,6 +85,8 @@ TITLES_LIST = {
     '74': {'title': "Sexiled: My Sexist Party Leader Kicked Me Out, So I Teamed Up With a Mythical Sorceress!", 'shortTitle': ['Sexiled', ], 'seriesType': 'Novel'},
     '75': {'title': "Demon Lord, Retry!", 'shortTitle': ['Demon Lord, Retry!', ], 'seriesType': 'Novel'},
     '76': {'title': "Sorcerous Stabber Orphen: The Reckless Journey", 'shortTitle': ['Sorcerous Stabber Orphen: The Reckless Journey', ], 'seriesType': 'Manga'},
+    '77': {'title': "Altina the Sword Princess", 'shortTitle': ['Altina', ], 'seriesType': 'Novel'},
+    '78': {'title': "Demon Lord, Retry! (Manga)", 'shortTitle': ['Demon Lord, Retry! (Manga)', ], 'seriesType': 'Manga'},
 }
 
 
