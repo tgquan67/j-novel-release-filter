@@ -87,6 +87,7 @@ TITLES_LIST = {
     '76': {'title': "Sorcerous Stabber Orphen: The Reckless Journey", 'shortTitle': ['Sorcerous Stabber Orphen: The Reckless Journey', ], 'seriesType': 'Manga'},
     '77': {'title': "Altina the Sword Princess", 'shortTitle': ['Altina', ], 'seriesType': 'Novel'},
     '78': {'title': "Demon Lord, Retry! (Manga)", 'shortTitle': ['Demon Lord, Retry! (Manga)', ], 'seriesType': 'Manga'},
+    '79': {'title': "The Holy Knight's Dark Road", 'shortTitle': ['Holy Knight\'s Dark Road', ], 'seriesType': 'Novel'},
 }
 
 
