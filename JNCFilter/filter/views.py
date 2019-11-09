@@ -88,6 +88,8 @@ TITLES_LIST = {
     '77': {'title': "Altina the Sword Princess", 'shortTitle': ['Altina', ], 'seriesType': 'Novel'},
     '78': {'title': "Demon Lord, Retry! (Manga)", 'shortTitle': ['Demon Lord, Retry! (Manga)', ], 'seriesType': 'Manga'},
     '79': {'title': "The Holy Knight's Dark Road", 'shortTitle': ['Holy Knight\'s Dark Road', ], 'seriesType': 'Novel'},
+    '80': {'title': "The Underdog of the Eight Greater Tribes", 'shortTitle': ['The Underdog of the Eight Greater Tribes', ], 'seriesType': 'Novel'},
+    '81': {'title': "By the Grace of the Gods", 'shortTitle': ['By the Grace of the Gods', ], 'seriesType': 'Novel'},
 }
 
 
