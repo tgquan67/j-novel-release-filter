@@ -90,6 +90,13 @@ TITLES_LIST = {
     '79': {'title': "The Holy Knight's Dark Road", 'shortTitle': ['Holy Knight\'s Dark Road', ], 'seriesType': 'Novel'},
     '80': {'title': "The Underdog of the Eight Greater Tribes", 'shortTitle': ['The Underdog of the Eight Greater Tribes', ], 'seriesType': 'Novel'},
     '81': {'title': "By the Grace of the Gods", 'shortTitle': ['By the Grace of the Gods', ], 'seriesType': 'Novel'},
+    '82': {'title': "The Economics of Prophecy", 'shortTitle': ['Economics of Prophecy', ], 'seriesType': 'Novel'},
+    '83': {'title': "Kobold King", 'shortTitle': ['Kobold King', ], 'seriesType': 'Novel'},
+    '84': {'title': "Outer Ragna", 'shortTitle': ['Outer Ragna', ], 'seriesType': 'Novel'},
+    '85': {'title': "Her Majesty’s Swarm", 'shortTitle': ["Her Majesty's Swarm", ], 'seriesType': 'Novel'},
+    '86': {'title': "Teogonia", 'shortTitle': ['Teogonia', ], 'seriesType': 'Novel'},
+    '87': {'title': "The World's Least Interesting Master Swordsman", 'shortTitle': ['Master Swordsman', ], 'seriesType': 'Novel'},
+    '88': {'title': "Tearmoon Empire", 'shortTitle': ['Tearmoon Empire', ], 'seriesType': 'Novel'},
 }
 
 
