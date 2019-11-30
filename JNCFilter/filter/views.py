@@ -62,7 +62,7 @@ TITLES_LIST = {
     '51': {'title': 'The Magic in this Other World is Too Far Behind! (Manga)', 'shortTitle': ['The Magic in this World is Too Far Behind!', 'The Magic in this Other World is Too Far Behind!'], 'seriesType': 'Manga'},
     '52': {'title': "An Archdemon's Dilemma: How to Love Your Elf Bride (Manga)", 'shortTitle': ['Elf Bride Manga', 'Elf Bride (Manga)', ], 'seriesType': 'Manga'},
     '53': {'title': 'Animeta!', 'shortTitle': ['Animeta!', ], 'seriesType': 'Manga'},
-    '54': {'title': 'Welcome to Japan, Ms. Elf!', 'shortTitle': ['Welcome to Japan, Ms. Elf!', ], 'seriesType': 'Novel'},
+    '54': {'title': 'Welcome to Japan, Ms. Elf!', 'shortTitle': ['Welcome to Japan, Ms. Elf!', 'Welcome Ms. Elf', ], 'seriesType': 'Novel'},
     '55': {'title': 'The Master of Ragnarok & Blesser of Einherjar (Manga)', 'shortTitle': ['The Master of Ragnarok (Manga)', ], 'seriesType': 'Manga'},
     '56': {'title': "The Greatest Magicmaster's Retirement Plan", 'shortTitle': ['Magicmaster', ], 'seriesType': 'Novel'},
     '57': {'title': "Campfire Cooking in Another World with My Absurd Skill", 'shortTitle': ['Campfire Cooking', ], 'seriesType': 'Novel'},
