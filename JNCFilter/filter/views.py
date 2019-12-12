@@ -98,6 +98,7 @@ TITLES_LIST = {
     '87': {'title': "The World's Least Interesting Master Swordsman", 'shortTitle': ['Master Swordsman', ], 'seriesType': 'Novel'},
     '88': {'title': "Tearmoon Empire", 'shortTitle': ['Tearmoon Empire', ], 'seriesType': 'Novel'},
     '89': {'title': "Isekai Rebuilding Project", 'shortTitle': ['Isekai Rebuilding Project', ], 'seriesType': 'Novel'},
+    '90': {'title': "I Refuse to Be Your Enemy!", 'shortTitle': ['I Refuse to Be Your Enemy!', ], 'seriesType': 'Novel'},
 }
 
 
