@@ -99,6 +99,9 @@ TITLES_LIST = {
     '88': {'title': "Tearmoon Empire", 'shortTitle': ['Tearmoon Empire', ], 'seriesType': 'Novel'},
     '89': {'title': "Isekai Rebuilding Project", 'shortTitle': ['Isekai Rebuilding Project', ], 'seriesType': 'Novel'},
     '90': {'title': "I Refuse to Be Your Enemy!", 'shortTitle': ['I Refuse to Be Your Enemy!', ], 'seriesType': 'Novel'},
+    '91': {'title': "Beatless", 'shortTitle': [ ], 'seriesType': 'Novel'},
+    '92': {'title': "The White Cat's Revenge as Plotted from the Dragon King's Lap", 'shortTitle': ["White Cat's Revenge", ], 'seriesType': 'Novel'},
+    '93': {'title': "Can Someone Please Explain What’s Going On?!", 'shortTitle': ['Can Someone Please Explain What’s Going On?!', ], 'seriesType': 'Novel'},
 }
 
 
