@@ -102,6 +102,7 @@ TITLES_LIST = {
     '91': {'title': "Beatless", 'shortTitle': [ ], 'seriesType': 'Novel'},
     '92': {'title': "The White Cat's Revenge as Plotted from the Dragon King's Lap", 'shortTitle': ["White Cat's Revenge", ], 'seriesType': 'Novel'},
     '93': {'title': "Can Someone Please Explain What’s Going On?!", 'shortTitle': ['Can Someone Please Explain What’s Going On?!', ], 'seriesType': 'Novel'},
+    '94': {'title': "Bibliophile Princess", 'shortTitle': ['Bibliophile Princess', ], 'seriesType': 'Novel'},
 }
 
 
