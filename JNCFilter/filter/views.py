@@ -103,6 +103,7 @@ TITLES_LIST = {
     '92': {'title': "The White Cat's Revenge as Plotted from the Dragon King's Lap", 'shortTitle': ["White Cat's Revenge", ], 'seriesType': 'Novel'},
     '93': {'title': "Can Someone Please Explain What’s Going On?!", 'shortTitle': ['Can Someone Please Explain What’s Going On?!', ], 'seriesType': 'Novel'},
     '94': {'title': "Bibliophile Princess", 'shortTitle': ['Bibliophile Princess', ], 'seriesType': 'Novel'},
+    '95': {'title': "The Tales of Marielle Clarac", 'shortTitle': ['Marielle Clarac', ], 'seriesType': 'Novel'},
 }
 
 
@@ -130,6 +131,8 @@ def cleanup_title(title):
         return title.rsplit(" V", 1)[0].strip()
     elif ":" in title:
         return title.rsplit(":", 1)[0].strip()
+    elif "Marielle Clarac" in title:
+        return "Marielle Clarac"
     else:
         return title.strip()
 
