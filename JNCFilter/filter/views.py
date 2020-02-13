@@ -93,7 +93,7 @@ TITLES_LIST = {
     '82': {'title': "The Economics of Prophecy", 'shortTitle': ['Economics of Prophecy', ], 'seriesType': 'Novel'},
     '83': {'title': "Kobold King", 'shortTitle': ['Kobold King', ], 'seriesType': 'Novel'},
     '84': {'title': "Outer Ragna", 'shortTitle': ['Outer Ragna', ], 'seriesType': 'Novel'},
-    '85': {'title': "Her Majesty’s Swarm", 'shortTitle': ["Her Majesty's Swarm", ], 'seriesType': 'Novel'},
+    '85': {'title': "Her Majesty\'s Swarm", 'shortTitle': ["Her Majesty's Swarm", ], 'seriesType': 'Novel'},
     '86': {'title': "Teogonia", 'shortTitle': ['Teogonia', ], 'seriesType': 'Novel'},
     '87': {'title': "The World's Least Interesting Master Swordsman", 'shortTitle': ['Master Swordsman', ], 'seriesType': 'Novel'},
     '88': {'title': "Tearmoon Empire", 'shortTitle': ['Tearmoon Empire', ], 'seriesType': 'Novel'},
@@ -101,9 +101,11 @@ TITLES_LIST = {
     '90': {'title': "I Refuse to Be Your Enemy!", 'shortTitle': ['I Refuse to Be Your Enemy!', ], 'seriesType': 'Novel'},
     '91': {'title': "Beatless", 'shortTitle': [ ], 'seriesType': 'Novel'},
     '92': {'title': "The White Cat's Revenge as Plotted from the Dragon King's Lap", 'shortTitle': ["White Cat's Revenge", ], 'seriesType': 'Novel'},
-    '93': {'title': "Can Someone Please Explain What’s Going On?!", 'shortTitle': ['Can Someone Please Explain What’s Going On?!', ], 'seriesType': 'Novel'},
+    '93': {'title': "Can Someone Please Explain What\'s Going On?!", 'shortTitle': ['Can Someone Please Explain What\'s Going On?!', ], 'seriesType': 'Novel'},
     '94': {'title': "Bibliophile Princess", 'shortTitle': ['Bibliophile Princess', ], 'seriesType': 'Novel'},
     '95': {'title': "The Tales of Marielle Clarac", 'shortTitle': ['Marielle Clarac', ], 'seriesType': 'Novel'},
+    '96': {'title': "The Hitchhiker\'s Guide to the Isekai", 'shortTitle': ['Hitchhiker\'s Guide to the Isekai', ], 'seriesType': 'Novel'},
+    '97': {'title': "The Extraordinary, the Ordinary, and SOAP!", 'shortTitle': ['The Extraordinary, the Ordinary, and SOAP!', ], 'seriesType': 'Novel'},
 }
 
 
