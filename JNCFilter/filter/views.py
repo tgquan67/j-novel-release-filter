@@ -129,14 +129,14 @@ def set_pref(request):
 
 
 def cleanup_title(title):
-    if title[-1] in "1234567890":
-        return title.rsplit(" V", 1)[0].strip()
-    elif ":" in title:
-        return title.rsplit(":", 1)[0].strip()
-    elif "Marielle Clarac" in title:
+    if "Marielle Clarac" in title:
         return "Marielle Clarac"
     elif "Bookworm Part" in title:
         return "Bookworm (LN)"
+    elif title[-1] in "1234567890":
+        return title.rsplit(" V", 1)[0].strip()
+    elif ":" in title:
+        return title.rsplit(":", 1)[0].strip()
     else:
         return title.strip()
 
