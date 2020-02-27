@@ -51,7 +51,7 @@ TITLES_LIST = {
     '40': {'title': 'ECHO', 'shortTitle': ['ECHO', ]},
     '41': {'title': 'My Next Life as a Villainess: All Routes Lead to Doom!', 'shortTitle': ['Bakarina', ]},
     '42': {'title': "Apparently it's My Fault That My Husband Has The Head of a Beast", 'shortTitle': ['Beast Head', ]},
-    '43': {'title': 'Ascendance of a Bookworm (Manga)', 'shortTitle': ['Ascendance of a Bookworm (Manga)', ], 'seriesType': 'Manga'},
+    '43': {'title': 'Ascendance of a Bookworm (Manga)', 'shortTitle': ['Ascendance of a Bookworm (Manga)', 'Bookworm (Manga)', ], 'seriesType': 'Manga'},
     '44': {'title': 'Seirei Gensouki: Spirit Chronicles (Manga)', 'shortTitle': ['Seirei Gensouki (Manga)', ], 'seriesType': 'Manga'},
     '45': {'title': 'A Very Fairy Apartment', 'shortTitle': ['A Very Fairy Apartment', ], 'seriesType': 'Manga'},
     '46': {'title': 'Infinite Dendrogram (Manga)', 'shortTitle': ['Infinite Dendrogram (Manga)', ], 'seriesType': 'Manga'},
@@ -99,7 +99,7 @@ TITLES_LIST = {
     '88': {'title': "Tearmoon Empire", 'shortTitle': ['Tearmoon Empire', ], 'seriesType': 'Novel'},
     '89': {'title': "Isekai Rebuilding Project", 'shortTitle': ['Isekai Rebuilding Project', ], 'seriesType': 'Novel'},
     '90': {'title': "I Refuse to Be Your Enemy!", 'shortTitle': ['I Refuse to Be Your Enemy!', ], 'seriesType': 'Novel'},
-    '91': {'title': "Beatless", 'shortTitle': [ ], 'seriesType': 'Novel'},
+    '91': {'title': "Beatless", 'shortTitle': [], 'seriesType': 'Novel'},
     '92': {'title': "The White Cat's Revenge as Plotted from the Dragon King's Lap", 'shortTitle': ["White Cat's Revenge", ], 'seriesType': 'Novel'},
     '93': {'title': "Can Someone Please Explain What\'s Going On?!", 'shortTitle': ['Can Someone Please Explain What\'s Going On?!', ], 'seriesType': 'Novel'},
     '94': {'title': "Bibliophile Princess", 'shortTitle': ['Bibliophile Princess', ], 'seriesType': 'Novel'},
@@ -135,6 +135,8 @@ def cleanup_title(title):
         return title.rsplit(":", 1)[0].strip()
     elif "Marielle Clarac" in title:
         return "Marielle Clarac"
+    elif "Bookworm Part" in title:
+        return "Bookworm (LN)"
     else:
         return title.strip()
 
