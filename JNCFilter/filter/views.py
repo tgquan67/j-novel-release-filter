@@ -101,7 +101,7 @@ TITLES_LIST = {
     '90': {'title': "I Refuse to Be Your Enemy!", 'shortTitle': ['I Refuse to Be Your Enemy!', ], 'seriesType': 'Novel'},
     '91': {'title': "Beatless", 'shortTitle': [], 'seriesType': 'Novel'},
     '92': {'title': "The White Cat's Revenge as Plotted from the Dragon King's Lap", 'shortTitle': ["White Cat's Revenge", ], 'seriesType': 'Novel'},
-    '93': {'title': "Can Someone Please Explain What\'s Going On?!", 'shortTitle': ['Can Someone Please Explain What\'s Going On?!', ], 'seriesType': 'Novel'},
+    '93': {'title': "Can Someone Please Explain What\'s Going On?!", 'shortTitle': ['Can Someone Please Explain What’s Going On?!', ], 'seriesType': 'Novel'},  # Do not edit this quotation mark
     '94': {'title': "Bibliophile Princess", 'shortTitle': ['Bibliophile Princess', ], 'seriesType': 'Novel'},
     '95': {'title': "The Tales of Marielle Clarac", 'shortTitle': ['Marielle Clarac', ], 'seriesType': 'Novel'},
     '96': {'title': "The Hitchhiker\'s Guide to the Isekai", 'shortTitle': ['Hitchhiker\'s Guide to the Isekai', ], 'seriesType': 'Novel'},
