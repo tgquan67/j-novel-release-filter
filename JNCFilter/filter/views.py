@@ -106,6 +106,10 @@ TITLES_LIST = {
     '95': {'title': "The Tales of Marielle Clarac", 'shortTitle': ['Marielle Clarac', ], 'seriesType': 'Novel'},
     '96': {'title': "The Hitchhiker\'s Guide to the Isekai", 'shortTitle': ['Hitchhiker\'s Guide to the Isekai', ], 'seriesType': 'Novel'},
     '97': {'title': "The Extraordinary, the Ordinary, and SOAP!", 'shortTitle': ['The Extraordinary, the Ordinary, and SOAP!', ], 'seriesType': 'Novel'},
+    '98': {'title': "Campfire Cooking in Another World with My Absurd Skill (Manga)", 'shortTitle': ['Campfire Cooking (Manga)', ], 'seriesType': 'Manga'},
+    '99': {'title': "A Wild Last Boss Appeared!", 'shortTitle': ['A Wild Last Boss Appeared!', ], 'seriesType': 'Novel'},
+    '100': {'title': "Wild Times with a Fake Fake Princess", 'shortTitle': ['Fake Fake Princess', ], 'seriesType': 'Novel'},
+    '101': {'title': "Deathbound Duke's Daughter", 'shortTitle': ['Deathbound Duke\'s Daughter', ], 'seriesType': 'Novel'},
 }
 
 
