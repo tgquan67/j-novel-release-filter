@@ -110,6 +110,11 @@ TITLES_LIST = {
     '99': {'title': "A Wild Last Boss Appeared!", 'shortTitle': ['A Wild Last Boss Appeared!', ], 'seriesType': 'Novel'},
     '100': {'title': "Wild Times with a Fake Fake Princess", 'shortTitle': ['Fake Fake Princess', ], 'seriesType': 'Novel'},
     '101': {'title': "Deathbound Duke's Daughter", 'shortTitle': ['Deathbound Duke\'s Daughter', ], 'seriesType': 'Novel'},
+    '102': {'title': "The Epic Tale of the Reincarnated Prince Herscherik", 'shortTitle': ['Prince Herscherik', ], 'seriesType': 'Novel'},
+    '103': {'title': "Monster Tamer", 'shortTitle': ['Monster Tamer', ], 'seriesType': 'Novel'},
+    '104': {'title': "When the Clock Strikes Z", 'shortTitle': ['When the Clock Strikes Z', ], 'seriesType': 'Novel'},
+    '105': {'title': "The Tales of Marielle Clarac (Manga)", 'shortTitle': ['Marielle Clarac (Manga)', ], 'seriesType': 'Manga'},
+    '106': {'title': "Bibliophile Princess (Manga)", 'shortTitle': ['Bibliophile Princess (Manga)', ], 'seriesType': 'Manga'},
 }
 
 
@@ -134,7 +139,10 @@ def set_pref(request):
 
 def cleanup_title(title):
     if "Marielle Clarac" in title:
-        return "Marielle Clarac"
+        if "manga" in title.lower():
+            return "Marielle Clarac (Manga)"
+        else:
+            return "Marielle Clarac"
     elif "Bookworm Part" in title:
         return "Bookworm (LN)"
     elif title[-1] in "1234567890":
