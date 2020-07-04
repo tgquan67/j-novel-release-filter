@@ -59,7 +59,7 @@ TITLES_LIST = {
     '48': {'title': 'I Shall Survive Using Potions!', 'shortTitle': ['Potion Loli', ], 'seriesType': 'Novel'},
     '49': {'title': 'Cooking with Wild Game', 'shortTitle': ['Cooking with Wild Game', ], 'seriesType': 'Novel'},
     '50': {'title': 'I Shall Survive Using Potions! (Manga)', 'shortTitle': ['I Shall Survive Using Potions!', 'Potion Loli (Manga)', ], 'seriesType': 'Manga'},
-    '51': {'title': 'The Magic in this Other World is Too Far Behind! (Manga)', 'shortTitle': ['The Magic in this World is Too Far Behind!', 'The Magic in this Other World is Too Far Behind!'], 'seriesType': 'Manga'},
+    '51': {'title': 'The Magic in this Other World is Too Far Behind! (Manga)', 'shortTitle': ['The Magic in this World is Too Far Behind!', 'The Magic in this Other World is Too Far Behind!', 'The Magic In This Other World (Manga)'], 'seriesType': 'Manga'},
     '52': {'title': "An Archdemon's Dilemma: How to Love Your Elf Bride (Manga)", 'shortTitle': ['Elf Bride Manga', 'Elf Bride (Manga)', ], 'seriesType': 'Manga'},
     '53': {'title': 'Animeta!', 'shortTitle': ['Animeta!', ], 'seriesType': 'Manga'},
     '54': {'title': 'Welcome to Japan, Ms. Elf!', 'shortTitle': ['Welcome to Japan, Ms. Elf!', 'Welcome Ms. Elf', ], 'seriesType': 'Novel'},
@@ -115,6 +115,18 @@ TITLES_LIST = {
     '104': {'title': "When the Clock Strikes Z", 'shortTitle': ['When the Clock Strikes Z', ], 'seriesType': 'Novel'},
     '105': {'title': "The Tales of Marielle Clarac (Manga)", 'shortTitle': ['Marielle Clarac (Manga)', ], 'seriesType': 'Manga'},
     '106': {'title': "Bibliophile Princess (Manga)", 'shortTitle': ['Bibliophile Princess (Manga)', ], 'seriesType': 'Manga'},
+    '107': {'title': "I Love Yuri and I Got Bodyswapped With a Fujoshi!", 'shortTitle': ['YuriOta', ], 'seriesType': 'Manga'},
+    '108': {'title': "Record of Wortenia War (Manga)", 'shortTitle': ['Record of Wortenia War (Manga)', ], 'seriesType': 'Manga'},
+    '109': {'title': "Mapping: The Trash-Tier Skill That Got Me Into a Top-Tier Party (Manga)", 'shortTitle': ['Mapping (Manga)', ], 'seriesType': 'Manga'},
+    '110': {'title': "Black Summoner (Manga)", 'shortTitle': ['Black Summoner (Manga)', ], 'seriesType': 'Manga'},
+    '111': {'title': "Slayers", 'shortTitle': ['Slayers', ], 'seriesType': 'Novel'},
+    '112': {'title': "Holmes of Kyoto", 'shortTitle': ['Holmes of Kyoto', ], 'seriesType': 'Novel'},
+    '113': {'title': "Black Summoner", 'shortTitle': ['Black Summoner', ], 'seriesType': 'Novel'},
+    '114': {'title': "The Sorcerer's Receptionist", 'shortTitle': ["Sorcerer's Receptionist", ], 'seriesType': 'Novel'},
+    '115': {'title': "Mapping: The Trash-Tier Skill That Got Me Into a Top-Tier Party", 'shortTitle': ['Mapping', ], 'seriesType': 'Novel'},
+    '116': {'title': "A Lily Blooms in Another World", 'shortTitle': ['A Lily Blooms in Another World', ], 'seriesType': 'Novel'},
+    '117': {'title': "WATARU!!! The Hot-Blooded Fighting Teen & His Epic Adventures in a Fantasy World After Stopping a Truck with His Bare Hands!!", 'shortTitle': ['WATARU!!!', ], 'seriesType': 'Novel'},
+    '118': {'title': "My Instant Death Ability is So Overpowered, No One in This Other World Stands a Chance Against Me!", 'shortTitle': ['Instant Death Cheat', ], 'seriesType': 'Novel'},
 }
 
 
