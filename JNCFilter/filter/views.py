@@ -127,6 +127,7 @@ TITLES_LIST = {
     '116': {'title': "A Lily Blooms in Another World", 'shortTitle': ['A Lily Blooms in Another World', ], 'seriesType': 'Novel'},
     '117': {'title': "WATARU!!! The Hot-Blooded Fighting Teen & His Epic Adventures in a Fantasy World After Stopping a Truck with His Bare Hands!!", 'shortTitle': ['WATARU!!!', ], 'seriesType': 'Novel'},
     '118': {'title': "My Instant Death Ability is So Overpowered, No One in This Other World Stands a Chance Against Me!", 'shortTitle': ['Instant Death Cheat', ], 'seriesType': 'Novel'},
+    '119': {'title': "I'll Never Set Foot in That House Again!", 'shortTitle': ["I'll Never Set Foot in That House Again!", ], 'seriesType': 'Novel'},
 }
 
 
