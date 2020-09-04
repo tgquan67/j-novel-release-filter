@@ -129,6 +129,7 @@ TITLES_LIST = {
     '118': {'title': "My Instant Death Ability is So Overpowered, No One in This Other World Stands a Chance Against Me!", 'shortTitle': ['Instant Death Cheat', ], 'seriesType': 'Novel'},
     '119': {'title': "I'll Never Set Foot in That House Again!", 'shortTitle': ["I'll Never Set Foot in That House Again!", ], 'seriesType': 'Novel'},
     '120': {'title': "Fushi no Kami: Rebuilding Civilization Starts With a Village", 'shortTitle': ["Fushi no Kami", ], 'seriesType': 'Novel'},
+    '121': {'title': "The Bloodline", 'shortTitle': ["The Bloodline", ], 'seriesType': 'Novel'},
 }
 
 
