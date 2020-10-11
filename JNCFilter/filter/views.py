@@ -130,6 +130,9 @@ TITLES_LIST = {
     '119': {'title': "I'll Never Set Foot in That House Again!", 'shortTitle': ["I'll Never Set Foot in That House Again!", ], 'seriesType': 'Novel'},
     '120': {'title': "Fushi no Kami: Rebuilding Civilization Starts With a Village", 'shortTitle': ["Fushi no Kami", ], 'seriesType': 'Novel'},
     '121': {'title': "The Bloodline", 'shortTitle': ["The Bloodline", ], 'seriesType': 'Novel'},
+    '122': {'title': "Our Crappy Social Game Club Is Gonna Make the Most Epic Game", 'shortTitle': ["Social Game Club", ], 'seriesType': 'Novel'},
+    '123': {'title': "Girls Kingdom", 'shortTitle': ["Girls Kingdom", ], 'seriesType': 'Novel'},
+    '124': {'title': "Dungeon Busters", 'shortTitle': ["Dungeon Busters", ], 'seriesType': 'Novel'},
 }
 
 
