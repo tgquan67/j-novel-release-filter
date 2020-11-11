@@ -133,6 +133,7 @@ TITLES_LIST = {
     '122': {'title': "Our Crappy Social Game Club Is Gonna Make the Most Epic Game", 'shortTitle': ["Social Game Club", ], 'seriesType': 'Novel'},
     '123': {'title': "Girls Kingdom", 'shortTitle': ["Girls Kingdom", ], 'seriesType': 'Novel'},
     '124': {'title': "Dungeon Busters", 'shortTitle': ["Dungeon Busters", ], 'seriesType': 'Novel'},
+    '125': {'title': "The Great Cleric", 'shortTitle': ["Great Cleric", ], 'seriesType': 'Novel'},
 }
 
 
