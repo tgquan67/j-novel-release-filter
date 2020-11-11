@@ -134,6 +134,7 @@ TITLES_LIST = {
     '123': {'title': "Girls Kingdom", 'shortTitle': ["Girls Kingdom", ], 'seriesType': 'Novel'},
     '124': {'title': "Dungeon Busters", 'shortTitle': ["Dungeon Busters", ], 'seriesType': 'Novel'},
     '125': {'title': "The Great Cleric", 'shortTitle': ["Great Cleric", ], 'seriesType': 'Novel'},
+    '126': {'title': "The Magician Who Rose From Failure", 'shortTitle': ["Magician Who Rose From Failure", ], 'seriesType': 'Novel'},
 }
 
 
