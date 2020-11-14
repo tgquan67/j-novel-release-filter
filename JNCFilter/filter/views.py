@@ -135,6 +135,10 @@ TITLES_LIST = {
     '124': {'title': "Dungeon Busters", 'shortTitle': ["Dungeon Busters", ], 'seriesType': 'Novel'},
     '125': {'title': "The Great Cleric", 'shortTitle': ["Great Cleric", ], 'seriesType': 'Novel'},
     '126': {'title': "The Magician Who Rose From Failure", 'shortTitle': ["Magician Who Rose From Failure", ], 'seriesType': 'Novel'},
+    '127': {'title': "The Apothecary Diaries", 'shortTitle': ["Apothecary Diaries", ], 'seriesType': 'Novel'},
+    '128': {'title': "The Ideal Sponger Life", 'shortTitle': ["Ideal Sponger Life", ], 'seriesType': 'Novel'},
+    '129': {'title': "Der Werwolf: The Annals of Veight -Origin-", 'shortTitle': ["Der Werwolf (Manga)", ], 'seriesType': 'Manga'},
+    '130': {'title': "Welcome to Japan, Ms. Elf! (Manga)", 'shortTitle': ["Welcome to Japan, Ms. Elf! (Manga)", ], 'seriesType': 'Manga'},
 }
 
 
