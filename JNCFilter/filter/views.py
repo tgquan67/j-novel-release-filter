@@ -140,6 +140,7 @@ TITLES_LIST = {
     '129': {'title': "Der Werwolf: The Annals of Veight -Origin-", 'shortTitle': ["Der Werwolf (Manga)", ], 'seriesType': 'Manga'},
     '130': {'title': "Welcome to Japan, Ms. Elf! (Manga)", 'shortTitle': ["Welcome to Japan, Ms. Elf! (Manga)", ], 'seriesType': 'Manga'},
     '131': {'title': "She's the Cutest... But We're Just Friends!", 'shortTitle': ["She's the Cutest... But We're Just Friends!", ], 'seriesType': 'Novel'},
+    '132': {'title': "My Friend's Little Sister Has It In for Me!", 'shortTitle': ["ImoUza", ], 'seriesType': 'Novel'},
 }
 
 
