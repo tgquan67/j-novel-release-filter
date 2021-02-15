@@ -1,4 +1,5 @@
 # Filter for J-Novel Club's releases
+## NOTICE: **decapricated** and no longer updated, as [beta.j-novel.club](https://beta.j-novel.club) finally has a `serieId` for each update, and that is much better than the workaround I have here.  
 Run:
 ```
 pip install -r requirements.txt
